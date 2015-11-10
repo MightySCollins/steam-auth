@@ -1,5 +1,5 @@
 <?php
-namespace Scollins\SteamAuth\Http\Controller;
+namespace SCollins\SteamAuth\Http\Controller;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -28,7 +28,7 @@ class SteamController extends Controller {
         } else {
             $url = config('steam.url');
         }
-        $openid = new \Scollins\SteamAuth\LightOpenID($url);
+        $openid = new \SCollins\SteamAuth\LightOpenID($url);
         if (!$openid->mode) {
             $openid->identity = 'http://steamcommunity.com/openid';
             echo $openid->authUrl();

@@ -1,5 +1,5 @@
 <?php
-namespace Scollins\SteamAuth;
+namespace SCollins\SteamAuth;
 
 use Illuminate\Support\ServiceProvider;
 
