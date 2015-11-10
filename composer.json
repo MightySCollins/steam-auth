@@ -1,0 +1,23 @@
+{
+    "name": "scollins/steam-auth",
+    "description": "",
+    "authors": [
+        {
+            "name": "scollins",
+            "email": "theatrepro11@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.1.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-4": {
+            "Scollins\\SteamAuth\\": "src/Scollins/SteamAuth"
+        }
+    },
+    "minimum-stability": "dev"
+}
