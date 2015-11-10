@@ -14,9 +14,9 @@ The user will be redirected to the steam login page, if they are able to sucsess
 ## How to use
 Grab the package with `composer require scollins/steam-auth`
 
-Add to your services ``
+Add to your services `Scollins\SteamAuth\SteamAuthServiceProvider::class,`
 
-You can even made a Facade ``
+You can even made a Facade `'Steam' => Scollins\SteamAuth\SteamAuthFacade::class,`
 
 Then publish the config files `php artisan vendor:publish`
 
