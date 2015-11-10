@@ -1,2 +1,2 @@
 <?php
-Route::get('/steamlogin', 'Scollins\SteamAuth\Http\Controller\SteamController@redirect');
+Route::get('/'.config('steam.loginUrl', 'steamlogin'), 'Scollins\SteamAuth\Http\Controller\SteamController@redirect');

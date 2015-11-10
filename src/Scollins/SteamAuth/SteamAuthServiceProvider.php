@@ -1,4 +1,5 @@
-<?php namespace Scollins\SteamAuth;
+<?php
+namespace Scollins\SteamAuth;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -18,14 +19,13 @@ class SteamAuthServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		//$this->package('scollins/steam-auth');
 		if (! $this->app->routesAreCached()) {
 	        require __DIR__.'/Http/routes.php';
 	    }
-	    require __DIR__.'/LightOpenID.php';
+	    require __DIR__.'/Classes/LightOpenID.php';
 	    
 	    $this->publishes([
-	        __DIR__.'/config/steam.php' => config_path('steam.php'),
+	        __DIR__.'/Config/steam.php' => config_path('steam.php'),
 	    ]);
 	}
 

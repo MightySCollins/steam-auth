@@ -1,11 +1,12 @@
-<?php namespace Scollins\SteamAuth;
+<?php
+namespace Scollins\SteamAuth;
  
 use Illuminate\Support\Facades\Facade;
  
-class Steam extends Facade {
+class SteamAuthFacade extends Facade {
  
     protected static function getFacadeAccessor() {
-        return 'Jejje\Gravatar\Image';
+        return 'Scollins\SteamAuth\Http\Controller\SteamController';
     }
  
 }

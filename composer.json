@@ -1,6 +1,8 @@
 {
     "name": "scollins/steam-auth",
-    "description": "",
+    "description": "Simple Steam Open ID Login for Laravel 5.1",
+    "keywords": ["steam", "OpenID", "steam api", "laravel5", "laravel"],
+    "license": "MIT",
     "authors": [
         {
             "name": "scollins",

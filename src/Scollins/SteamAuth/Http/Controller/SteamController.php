@@ -46,4 +46,9 @@ class SteamController extends Controller {
             }
         }
     }
+    
+    public function get($playerId)
+    {
+        return json_decode($this->cURL('http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=' . config('steam.api') . '&steamids=' . $playerId))->response->players[0];
+    }
 }
