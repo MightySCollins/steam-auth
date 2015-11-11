@@ -1,5 +1,5 @@
 <?php
-namespace SCollins\SteamAuth\Http\Controller;
+namespace SCollins\SteamAuth\Http;
 
 use Illuminate\Http\Request;
 use App\Http\Requests;
@@ -50,5 +50,13 @@ class SteamController extends Controller {
     public function get($playerId)
     {
         return json_decode($this->cURL('http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=' . config('steam.api') . '&steamids=' . $playerId))->response->players[0];
+    }
+    
+    public function signOut()
+    {
+        Session::forget('playerId');
+        Session::forget('name');
+        Session::forget('avatar');
+        return redirect(config('steam.loginPage'), '/');
     }
 }

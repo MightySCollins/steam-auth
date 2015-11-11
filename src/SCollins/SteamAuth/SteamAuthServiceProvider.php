@@ -25,7 +25,7 @@ class SteamAuthServiceProvider extends ServiceProvider {
 	    require __DIR__.'/Classes/LightOpenID.php';
 	    
 	    $this->publishes([
-	        __DIR__.'/Config/steam.php' => config_path('steam.php'),
+	        __DIR__.'../config/steam.php' => config_path('steam.php'),
 	    ]);
 	}
 

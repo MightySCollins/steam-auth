@@ -22,10 +22,12 @@ return [
     | url: Install URL, leave blank to autodetect
     | redirect: Where the user should be redirected after Auth
     | loginUrl: Where the user needs to go to login
+    | loginPage: Where the user should be redirected if they are not logged in
     |
     */
     
     'url' => '',
     'redirect' => '',
     'loginUrl' => 'steamlogin',
+    'loginPage' => '/',
 ];

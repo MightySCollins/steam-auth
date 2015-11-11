@@ -11,6 +11,8 @@ The user will be redirected to the steam login page, if they are able to sucsess
    - name
    - avatar (Current 64x64)
 
+Now with support for Facades, just add `'steamLogin' => \SCollins\SteamAuth\Http\SteamLogin::class,` to your kernal and it will test if the user is logged in.
+
 ## How to use
 Grab the package with `composer require scollins/steam-auth`
 
