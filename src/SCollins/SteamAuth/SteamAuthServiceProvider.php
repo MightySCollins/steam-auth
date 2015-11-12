@@ -22,7 +22,7 @@ class SteamAuthServiceProvider extends ServiceProvider {
 		if (! $this->app->routesAreCached()) {
 	        require __DIR__.'/Http/routes.php';
 	    }
-	    require __DIR__.'/Classes/LightOpenID.php';
+	    require_once __DIR__.'/Classes/LightOpenID.php';
 	    
 	    $this->publishes([
 	        __DIR__.'/Config/steam.php' => config_path('steam.php'),
