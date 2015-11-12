@@ -57,6 +57,6 @@ class SteamController extends Controller {
         Session::forget('playerId');
         Session::forget('name');
         Session::forget('avatar');
-        return redirect(config('steam.loginPage'), '/');
+        return redirect(config('steam.loginPage', '/'));
     }
 }

@@ -25,4 +25,4 @@ Then publish the config files `php artisan vendor:publish`
 Fill in the details at /config/steam.php
 
 
-Redirect user to /steamlogin and they should login
+Redirect user to /steamlogin and they should login and /steamlogout to logout
